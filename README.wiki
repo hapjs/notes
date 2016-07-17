@@ -7,7 +7,7 @@
 {|
 ! 名称 !! 链接 !! 说明
 |-
-| Stylus Compiler || [http://beautifytools.com/stylus-compiler.php] || Stylus在线编译
+| Stylus Compiler || http://beautifytools.com/stylus-compiler.php || Stylus在线编译
 |-
 |}
 
