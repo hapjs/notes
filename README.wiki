@@ -27,4 +27,7 @@
 | w3.css || http://www.w3schools.com/w3css/default.asp || 移动CSS框架
 |-
 | iconfont || http://www.iconfont.cn/ || 字体图标管理
+|-
+| loading.io || http://loading.io/ || 纯CSS实现的loading图标
+|-
 |}
