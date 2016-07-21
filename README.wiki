@@ -7,7 +7,7 @@
 ! 链接 !! 说明
 |-
 | http://npmjs.org || npm官网
-| -
+|-
 | http://github.com || github
 |-
 |}
