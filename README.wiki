@@ -2,6 +2,24 @@
 
 = =
 
+== 常用 ==
+{|
+! 链接 !! 说明
+|-
+| http://npmjs.org ||
+| -
+| http://github.com ||
+|-
+|}
+
+== JS框架 ==
+{|
+! 链接 !! 说明
+|-
+| http://riotjs.com/zh/ || 类似 React 的微型 UI 库
+|-
+|}
+
 == 在线工具 ==
 
 {|
@@ -29,5 +47,13 @@
 | iconfont || http://www.iconfont.cn/ || 字体图标管理
 |-
 | loading.io || http://loading.io/ || 纯CSS实现的loading图标
+|-
+|}
+
+== 软件 ==
+{|
+! 名称 !! 链接 !! 说明
+|-
+| marp || https://yhatt.github.io/marp/ || 用Markdown写作PPT
 |-
 |}
