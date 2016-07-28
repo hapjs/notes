@@ -64,6 +64,10 @@
 |-
 | http://learngitbranching.js.org/ || git学习
 |-
+| https://nodejs.org/api/ || node.js api
+|-
+| http://caolan.github.io/async/ || async
+|-
 |}
 
 
