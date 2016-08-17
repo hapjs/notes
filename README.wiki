@@ -75,4 +75,10 @@
 | https://www.liquidlight.co.uk/blog/article/how-do-i-update-to-gulp-4/ || gulp 4 升级指南
 |-
 | http://macshuo.com/ || 池建强的博客
+|-
+| http://githubrank.com/ || github china 100
+|-
+| http://caolan.github.io/async/docs.html || async.js 文档
+|-
+| https://luozhihao.github.io/vue-puzzle/index.html#!/ || VUE拼图游戏
 |}
