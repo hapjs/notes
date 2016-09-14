@@ -81,4 +81,6 @@
 | http://caolan.github.io/async/docs.html || async.js 文档
 |-
 | https://luozhihao.github.io/vue-puzzle/index.html#!/ || VUE拼图游戏
+|-
+| https://tinypng.com/ || png图片在线压缩
 |}
