@@ -83,4 +83,6 @@
 | https://luozhihao.github.io/vue-puzzle/index.html#!/ || VUE拼图游戏
 |-
 | https://tinypng.com/ || png图片在线压缩
+|-
+| http://kangax.github.io/compat-table/es5/ || ES兼容性列表
 |}
