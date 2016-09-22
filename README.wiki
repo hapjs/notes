@@ -87,4 +87,6 @@
 | http://kangax.github.io/compat-table/es5/ || ES兼容性列表
 |-
 | http://debugx5.qq.com/ || 清除微信浏览器缓存
+|-
+| http://ih5.cn || h5效果
 |}
