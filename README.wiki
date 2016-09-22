@@ -85,4 +85,6 @@
 | https://tinypng.com/ || png图片在线压缩
 |-
 | http://kangax.github.io/compat-table/es5/ || ES兼容性列表
+|-
+| http://debugx5.qq.com/ || 清除微信浏览器缓存
 |}
