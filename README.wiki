@@ -30,6 +30,8 @@
 |-
 | http://caolan.github.io/async/docs.html || async.js 文档
 |-
+| http://babeljs.cn/ || Babel
+|-
 |}
 
 == JS框架 ==
