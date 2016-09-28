@@ -10,6 +10,26 @@
 |-
 | http://github.com || github
 |-
+| http://codepen.io || CodePen
+|-
+| iconfont || http://www.iconfont.cn/ || 字体图标管理
+|-
+|}
+
+== 在线文档 ==
+{|
+! 链接 !! 说明
+|-
+| http://kangax.github.io/compat-table/es5/ || ES兼容性列表
+|-
+| https://nodejs.org/api/ || node.js api
+|-
+| http://expressjs.com/zh-cn/4x/api.html || express api
+|-
+| https://gulp.readme.io/docs/ || gulp
+|-
+| http://caolan.github.io/async/docs.html || async.js 文档
+|-
 |}
 
 == JS框架 ==
@@ -44,8 +64,6 @@
 |-
 | w3.css || http://www.w3schools.com/w3css/default.asp || 移动CSS框架
 |-
-| iconfont || http://www.iconfont.cn/ || 字体图标管理
-|-
 | loading.io || http://loading.io/ || 纯CSS实现的loading图标
 |-
 |}
@@ -64,13 +82,7 @@
 |-
 | http://learngitbranching.js.org/ || git学习
 |-
-| https://nodejs.org/api/ || node.js api
-|-
 | http://caolan.github.io/async/ || async
-|-
-| http://expressjs.com/zh-cn/4x/api.html || express api
-|-
-| https://gulp.readme.io/docs/ || gulp
 |-
 | https://www.liquidlight.co.uk/blog/article/how-do-i-update-to-gulp-4/ || gulp 4 升级指南
 |-
@@ -78,13 +90,9 @@
 |-
 | http://githubrank.com/ || github china 100
 |-
-| http://caolan.github.io/async/docs.html || async.js 文档
-|-
 | https://luozhihao.github.io/vue-puzzle/index.html#!/ || VUE拼图游戏
 |-
 | https://tinypng.com/ || png图片在线压缩
-|-
-| http://kangax.github.io/compat-table/es5/ || ES兼容性列表
 |-
 | http://debugx5.qq.com/ || 清除微信浏览器缓存
 |-
@@ -95,6 +103,4 @@
 | https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644089359 || 微信小程序官方文档
 |-
 | http://gold.xitu.io/entry/57e8c8580e3dd900582b13fa || 通过微信小程序看前端
-|-
-| http://codepen.io || CodePen
 |}
