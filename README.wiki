@@ -13,7 +13,6 @@
 | http://codepen.io || CodePen
 |-
 | http://www.iconfont.cn/ || 字体图标管理
-|-
 |}
 
 == 在线文档 ==
@@ -31,6 +30,8 @@
 | http://caolan.github.io/async/docs.html || async.js 文档
 |-
 | http://babeljs.cn/ || Babel
+|-
+| http://cn.vuejs.org/ || vue
 |-
 |}
 
