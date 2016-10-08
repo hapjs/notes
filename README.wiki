@@ -110,4 +110,6 @@
 | http://www.wikihow.com || wikihow
 |-
 | http://www.wikihow.com/Find-the-Big-Dipper || 如何寻找北斗七星
+|-
+| http://www.umindex.com/ || 移动设备及系统占有率统计
 |}
