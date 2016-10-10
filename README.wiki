@@ -117,5 +117,7 @@
 |-
 | https://saucelabs.com/beta/suites || 自动测试服务
 |-
-| http://www.network-science.de/ascii/ || 生成ascii图像
+| http://www.network-science.de/ascii/ || 文字转ascii图像
+|-
+| http://www.glassgiant.com/ascii/ || 图片转ascii图像
 |}
