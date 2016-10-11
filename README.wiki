@@ -33,6 +33,8 @@
 |-
 | http://cn.vuejs.org/ || vue
 |-
+| https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644089359 || 微信小程序官方文档
+|-
 |}
 
 == JS框架 ==
@@ -49,6 +51,10 @@
 ! 链接 !! 说明
 |-
 | http://beautifytools.com/stylus-compiler.php || Stylus在线编译
+|-
+| http://www.network-science.de/ascii/ || 文字转ascii图像
+|-
+| http://www.glassgiant.com/ascii/ || 图片转ascii图像
 |-
 |}
 
@@ -103,8 +109,6 @@
 |-
 | http://ffffound.com/ || 图片素材网站
 |-
-| https://mp.weixin.qq.com/debug/wxadoc/dev/?t=1474644089359 || 微信小程序官方文档
-|-
 | http://gold.xitu.io/entry/57e8c8580e3dd900582b13fa || 通过微信小程序看前端
 |-
 | http://www.wikihow.com || wikihow
@@ -116,8 +120,4 @@
 | https://www.browserling.com/ || 浏览器兼容性测试
 |-
 | https://saucelabs.com/beta/suites || 自动测试服务
-|-
-| http://www.network-science.de/ascii/ || 文字转ascii图像
-|-
-| http://www.glassgiant.com/ascii/ || 图片转ascii图像
 |}
