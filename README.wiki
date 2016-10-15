@@ -120,4 +120,6 @@
 | https://www.browserling.com/ || 浏览器兼容性测试
 |-
 | https://saucelabs.com/beta/suites || 自动测试服务
+|-
+| https://www.appveyor.com/ || 云端构建工具
 |}
