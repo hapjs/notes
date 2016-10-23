@@ -89,7 +89,7 @@
 {|
 ! 链接 !! 说明
 |-
-| http://learngitbranching.js.org/?locale=zh_CN || git学习
+| http://learngitbranching.js.org/?NODEMO&locale=zh_CN || git学习
 |-
 | http://caolan.github.io/async/ || async
 |-
