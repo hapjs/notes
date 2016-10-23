@@ -1,4 +1,4 @@
-<h1>HapJS收藏的各类网址</h1>
+<h1>网址收藏</h1>
 
 = =
 
@@ -113,7 +113,7 @@
 |-
 | http://www.wikihow.com || wikihow
 |-
-| http://www.wikihow.com/Find-the-Big-Dipper || 如何寻找北斗七星
+| http://www.wikihow.com/Find-the-Big-Dipper || find-the-big-dipper
 |-
 | http://www.umindex.com/ || 移动设备及系统占有率统计
 |-
