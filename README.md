@@ -1,7 +1,5 @@
 # notes
 
-### 网址收藏
+[网址收藏](./sites.wiki)
 
-[sites.wiki](./sites.wiki);
-
-### git知识
+[git知识](./git.md)
