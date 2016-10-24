@@ -16,6 +16,11 @@ git branch bugFix
 git checkout bugFix
 ```
 
+撤销本地修改
+```
+git checkout -- a.txt
+```
+
 ### rebase 
 
 让当前分支移动到指定分支之后（包含指定分支的所有提交）
@@ -45,6 +50,11 @@ git reset C1
 强行回退
 ```
 git reset --hard C1 
+```
+
+从暂存中移除文件
+```
+git reset HEAD a.txt
 ```
 
 ### revert
