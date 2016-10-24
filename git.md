@@ -1,4 +1,4 @@
-# git 知识
+# git 笔记
 
 整理了git常用命令
 
@@ -40,6 +40,11 @@ git merge master
 git reset HEAD^
 git reset HEAD~4
 git reset C1
+```
+
+强行回退
+```
+git reset --hard C1 
 ```
 
 ### revert
