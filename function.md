@@ -90,7 +90,7 @@ var sub = function(s, o) {
 ```
 
 ### 判断是否数字
-```
+```js
 function isNumber(s){
     return typeof s === 'number' || !!(s && !isNaN(s));
 };
