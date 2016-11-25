@@ -110,3 +110,29 @@ function hasClass(node, cls, context){
     return !!node.className.match(new RegExp('\\b' + cls + '\\b'));
 }
 ```
+
+### addClass
+```js
+function addClass(node, cls){
+    if(typeof node === 'string') node = document.querySelector(node);
+
+    if(!node || (typeof node.className !== 'string')) return;
+
+    if(node.className.indexOf(cls) === -1) {
+        node.className += ' ' + cls;
+    }
+}
+```
+
+### removeClass
+```js
+function removeClass(node, cls){
+    if(typeof node === 'string') node = document.querySelector(node);
+
+    if(!node || (typeof node.className !== 'string')) return;
+
+    if(node.className.indexOf(cls) !== -1) {
+        node.className = node.className.replace(cls, '');
+    }
+}
+```
