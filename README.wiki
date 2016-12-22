@@ -47,6 +47,17 @@
 |-
 |}
 
+== 博客 ==
+{|
+! 链接 !! 说明
+|-
+| http://lea.verou.me/ || Lea Verou
+|-
+|- http://www.ruanyifeng.com/blog/archives.html || 阮一峰
+|-
+|}
+
+
 == 在线工具 ==
 
 {|
