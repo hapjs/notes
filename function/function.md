@@ -136,3 +136,17 @@ function removeClass(node, cls){
     }
 }
 ```
+
+### 判断是否奇数（不包含负数）
+```js
+function isOdd (n) {
+    return ((n + '').match(/^\d*(\d)(\.0+)?$/) || [])[1] % 2 === 1
+}
+```
+
+### 判断是否偶数（不包含负数）
+```js
+function isEven (n) {
+    return ((n + '').match(/^\d*(\d)(\.0+)?$/) || [])[1] % 2 === 0
+}
+```
