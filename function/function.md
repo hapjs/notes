@@ -43,8 +43,8 @@ function extend() {
         deep = Array.prototype.shift.call(args);
     };
     dest = Array.prototype.shift.call(args);
-    Array.prototype.forEach.call(args, function (src) {
-        Object.keys(src).forEach(function (key) {
+    dest && Array.prototype.forEach.call(args, function (src) {
+        src && Object.keys(src).forEach(function (key) {
             if (deep && typeof src[key] === 'object' && typeof dest[key] === 'object') {
                 extend(true, dest[key], src[key]);
             } else if (typeof src[key] !== 'undefined') {
