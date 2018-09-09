@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div.container{
+            width: 500px;
+            height: 500px;
+            background: #EEE;
+        }
+        div.good,
+        div.bad{ 
+            background: green;
+            width: 20px;
+            height: 30px;
+            position: absolute;
+            border-radius: 50%;
+        }
+        div.good{ 
+            left: 20px;
+            top: 200px;
+        }
+        div.bad{ 
+            left: 20px;
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="good"></div>
+        <div class="bad"></div>
+    </div>
+
+    <script>
+
+        // 如果浏览器不支持requestAnimationFrame，用setTimeout模拟
+        window.requestAnimFrame = (function(){
+            return  window.requestAnimationFrame       ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame    ||
+                    function( callback ){
+                        window.setTimeout(callback, 1000 / 60);
+                    };
+        })();
+
+        var step = 5,
+            containerWidth = document.querySelector('.container').clientWidth,
+            good = document.querySelector('.good'),
+            goodDeg = 0,
+            goodLeft = 0,
+            bad = document.querySelector('.bad'),
+            badDeg = 0,
+            badLeft = 0;
+
+
+        // 用法:
+        (function animloop(){
+            requestAnimFrame(animloop);
+            goodRender();
+        })();
+
+        function goodRender(){
+            // goodDeg += step;
+            // if(goodDeg >= 360) goodDeg = goodDeg - 360;
+            // good.style.transform = 'rotateZ(' + goodDeg + 'deg)';    
+        }
+
+        function badRender(){
+            // badDeg += step;
+            // if(badDeg >= 360) badDeg = badDeg - 360;
+            // bad.style.transform = 'rotateZ(' + badDeg + 'deg)';    
+        }
+
+        setInterval(function(){
+            badRender();
+        }, 1000/60);
+
+    </script>
+</body>
+</html>
