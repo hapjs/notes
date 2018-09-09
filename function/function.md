@@ -43,8 +43,8 @@ function extend() {
         deep = Array.prototype.shift.call(args);
     };
     dest = Array.prototype.shift.call(args);
-    Array.prototype.forEach.call(args, function (src) {
-        Object.keys(src).forEach(function (key) {
+    dest && Array.prototype.forEach.call(args, function (src) {
+        src && Object.keys(src).forEach(function (key) {
             if (deep && typeof src[key] === 'object' && typeof dest[key] === 'object') {
                 extend(true, dest[key], src[key]);
             } else if (typeof src[key] !== 'undefined') {
@@ -134,5 +134,19 @@ function removeClass(node, cls){
     if(node.className.indexOf(cls) !== -1) {
         node.className = node.className.replace(cls, '');
     }
+}
+```
+
+### 判断是否奇数（不包含负数）
+```js
+function isOdd (n) {
+    return ((n + '').match(/^\d*(\d)(\.0+)?$/) || [])[1] % 2 === 1
+}
+```
+
+### 判断是否偶数（不包含负数）
+```js
+function isEven (n) {
+    return ((n + '').match(/^\d*(\d)(\.0+)?$/) || [])[1] % 2 === 0
 }
 ```
