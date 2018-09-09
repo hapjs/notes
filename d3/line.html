@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>折线图</title>
+    <script src="d3.v5.min.js"></script>
+    <style>
+        body{margin: 0}
+
+        svg .line{
+            fill: none;
+            stroke: coral;
+            stroke-width: 2;
+        }
+
+        svg .dot{
+            fill: coral;
+        }
+        svg .dot.focus{
+            fill: red;
+        }
+    </style>
+</head>
+<body>
+    <svg></svg>
+    <script>
+        var data = [
+            ['一月', 1],
+            ['二月', 2],
+            ['三月', 3],
+            ['四月', 1],
+            ['五月', 4],
+            ['六月', 8]
+        ]
+
+        function render(data) {
+            // svg padding
+            var padding = {left: 30, right: 30, top: 30, bottom: 30}
+            var svgWidth = document.documentElement.clientWidth - padding.left - padding.right
+            var svgHeight = 400
+            
+            // left axis width
+            var axisLeft = 20
+            // bottom axis height
+            var axisBottom = 20
+
+            //  chart size
+            var chartWidth = svgWidth - axisLeft
+            var charHeight = svgHeight - axisBottom
+            
+            // svg
+            var svg = d3.select('svg')
+                .html('')
+                .attr('width', svgWidth + padding.left + padding.right)
+                .attr('height', svgHeight + padding.top + padding.bottom)
+                .style('background', '#EEE')
+            
+            // scale
+            var yMax = d3.max(data, n => n[1])
+            var yScale = d3.scaleLinear()
+                .domain(d3.extent(data, n => n[1]))
+                .range([charHeight, 0])
+            var xScale = d3.scaleLinear()
+                .domain([0, data.length - 1])
+                .range([0, chartWidth])
+            
+            // axis
+            var yAxis = d3.axisLeft()
+                .ticks(6)
+                .scale(yScale)
+            var xAxis = d3.axisBottom()
+                .tickFormat(n => data[n][0])
+                .ticks(data.length)
+                .scale(xScale)
+            
+            svg.append('g')
+                .attr('transform', `translate(${padding.left + axisLeft}, ${padding.top})`)
+                .call(yAxis)
+            svg.append('g')
+                .attr('transform', `translate(${padding.left + axisLeft}, ${padding.top + charHeight})`)
+                .call(xAxis)
+            
+            // line
+            var line = d3.line()
+                .x((d, i) => xScale(i))
+                .y(d => yScale(d[1]))
+                .curve(d3.curveMonotoneX)
+            
+            // draw line
+            svg.append('path')
+                .datum(data)
+                .attr('transform', `translate(${padding.left + axisLeft}, ${padding.top})`)
+                .attr('class', 'line')
+                .attr('d', line)
+
+            svg.selectAll('.dot')
+                .data(data)
+                .enter()
+                .append('circle') // Uses the enter().append() method
+                .attr('class', 'dot') // Assign a class for styling
+                .attr('cx', (d, i) => xScale(i))
+                .attr('cy', d => yScale(d[1]))
+                .attr('r', 5)
+                .attr('transform', `translate(${padding.left + axisLeft}, ${padding.top})`)
+                .on('mouseover', function() {
+                    this.setAttribute('class', 'dot focus')
+                })
+                .on('mouseleave', function() {
+                    this.setAttribute('class', 'dot')
+                })
+        }
+
+        render(data)
+
+        window.onresize = () => render(data)
+    </script>
+</body>
+</html>
