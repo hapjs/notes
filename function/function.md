@@ -89,6 +89,39 @@ var sub = function(s, o) {
 };
 ```
 
+### 命名空间函数
+
+```js
+/** 查询或创建命名空间并给它赋值
+  @param {Object} root 根对象（必须）
+  @param {String} path 命名空间路径（必须）
+  @param {Object} value 对命名空间赋的值（必须）
+  @param {Boolean} dontCreate 是否禁止创建路径， 默认为true
+*/
+function namespace(root, path, value){
+    if(!path) return root;
+
+    var name, parent,
+        obj = root || window,
+        path = path.split(".");
+
+    // 
+    for(var i = 0; i < path.length; i++){
+        name = path[i];
+        if(name){
+            parent = obj;
+            obj = parent[name] = parent[name] || ((i < path.length - 1) ? {} : undefined);
+        };
+    };
+    // set value
+    if(arguments.length >= 3 && name){
+        obj = parent[name] = value;
+    };
+
+    return obj;
+};
+```
+
 ### 判断是否数字
 ```js
 function isNumber(s){
