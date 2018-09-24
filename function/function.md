@@ -98,28 +98,34 @@ var sub = function(s, o) {
   @param {Object} value 对命名空间赋的值（必须）
   @param {Boolean} dontCreate 是否禁止创建路径， 默认为true
 */
-function namespace(root, path, value){
-    if(!path) return root;
+export function namespace (root, path, value) {
+    if (!path) return root
 
-    var name, parent,
-        obj = root || window,
-        path = path.split(".");
+    var name
+    var parent
+    var obj = root || window
+    var needSetValue = arguments.length >= 3
+    
+    path = path.split('.')
+    
+    // get value
+    for (var i = 0; i < path.length; i++) {
+        name = path[i]
+        if (name) {
+            // if don't set value 
+            if (!(name in obj) && !needSetValue) return undefined
+            parent = obj
+            obj = parent[name] = parent[name] || ((i < path.length - 1) ? {} : undefined)
+        }
+    }
 
-    // 
-    for(var i = 0; i < path.length; i++){
-        name = path[i];
-        if(name){
-            parent = obj;
-            obj = parent[name] = parent[name] || ((i < path.length - 1) ? {} : undefined);
-        };
-    };
     // set value
-    if(arguments.length >= 3 && name){
-        obj = parent[name] = value;
-    };
+    if (needSetValue && name) {
+        obj = parent[name] = value
+    }
 
-    return obj;
-};
+    return obj
+}
 ```
 
 ### 判断是否数字
