@@ -189,3 +189,15 @@ function isEven (n) {
     return ((n + '').match(/^\d*(\d)(\.0+)?$/) || [])[1] % 2 === 0
 }
 ```
+
+### 取url参数
+```js
+function getParams (url) {
+    var params = {};
+    (url.split('?')[1] || '').split('&').forEach(function (s) {
+        s = s.split('=');
+        if (s[0]) params[s[0]] = s[1] || '';
+    })
+    return params;
+}
+```
